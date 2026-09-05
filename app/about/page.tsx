@@ -1,6 +1,13 @@
 import Header from "../header";
 import Nav from "../Nav";
 import Footer from "../footer";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+      title: "About Page", 
+      description: "This is the About page"
+}
+
 
 export default function AboutPage() {
   return (

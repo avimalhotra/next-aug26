@@ -1,6 +1,11 @@
 import Header from "../header";
 import Nav from "../Nav";
 import Footer from "../footer";
+import { Metadata } from "next";
+export const metadata: Metadata = {
+      title: "Cars Page", 
+      description: "This is the cars page"
+}
 
 export default function CarsLayout({
   children,
@@ -12,7 +17,7 @@ export default function CarsLayout({
       <Header></Header>
       <Nav></Nav>
       <main>
-        <h1 className="font-bold text-4xl">Cars Layout</h1>
+        {/* <h2 className="font-bold text-3xl">Cars Layout</h2> */}
         {children}
       </main>
       <Footer></Footer>
