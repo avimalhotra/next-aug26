@@ -1,7 +1,9 @@
 import Header from "./header";
 import Nav from "./Nav";
 import Footer from "./footer";
-import Counter from "./counter";
+// import Counter from "./counter";
+// import CarsAPI from "./carsapi";
+import FormData from "./formComponent";
 
 export default function Home() {
   return (
@@ -10,7 +12,8 @@ export default function Home() {
       <Nav></Nav>
       <main className="py-3">
         <h2 className="font-bold text-3xl">Homepage</h2>
-        <Counter></Counter>
+
+        <FormData></FormData>       
         
       </main>
       <Footer></Footer>
