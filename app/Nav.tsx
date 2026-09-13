@@ -13,6 +13,9 @@ export default function Nav() {
         <li>
           <Link href="/cars">Cars</Link>
         </li>
+        <li>
+          <Link href="/contact">Contact Us</Link>
+        </li>
       </ul>
     </nav>
   );

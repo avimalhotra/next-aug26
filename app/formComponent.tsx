@@ -1,13 +1,10 @@
 "use client";
 import { useState } from "react";
 
-
 export default function FormData(){
 
-     // const [name,setName]=useState("");
      const [form,setForm]=useState({name:"",email:"", age:""});
      const [error,setError]=useState("");
-     
 
      function changeForm(e){
           setForm({
@@ -18,7 +15,7 @@ export default function FormData(){
 
      async function submitForm(e){
           e.preventDefault();          
-          // console.log("submitted");
+          
 
           if(!e.target.name.value.trim().length){ setError("Invalid Name") }
           else if(!e.target.email.value.trim().length){ setError(" Enter Email") }
@@ -31,14 +28,10 @@ export default function FormData(){
                console.log(y);
           }
 
-          
-          
      }
 
      return (
           <form className="my-3" onSubmit={submitForm} noValidate>
-
-               {/* <label>Name: <input className="border p-2 rounded" name="name" type="text" value={name} onChange={e=>setName(e.target.value)} required /></label> */}
 
                 <label className="me-3">Name: <input className="border p-2 rounded" value={form.name} name="name" type="text" onChange={changeForm} required /></label>
                 <label className="me-3">Email: <input className="border p-2 rounded" value={form.email} name="email" type="email" onChange={changeForm} required /></label>
