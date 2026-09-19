@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function AboutPage() {
   return (
     <>
-      <p>Available Cars</p>
+      <h2 className="font-bold text-3xl">Available Cars</h2>
       <ol className="d-flex gap-3">
         <li>
           <Link href="/cars/alto">Alto</Link>

@@ -16,7 +16,6 @@ export default function FormData(){
      async function submitForm(e){
           e.preventDefault();          
           
-
           if(!e.target.name.value.trim().length){ setError("Invalid Name") }
           else if(!e.target.email.value.trim().length){ setError(" Enter Email") }
           else if( !/[\w]{1,}@[\w]{1,}\.[a-z]{2,}/.test(e.target.email.value) ){ setError("Invalid Email") }

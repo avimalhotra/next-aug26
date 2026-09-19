@@ -37,8 +37,8 @@ export default function AboutPage() {
                <label>Email: <input type="email" name="email" required className="border p-2 rounded me-2" /></label>
                <button className="border py-2 px-4 rounded cursor-pointer hover:bg-gray-600">Submit</button>
           </form>
-
-
+          
+          
       </main>
       <Footer></Footer>
     </div>
