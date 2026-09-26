@@ -6,6 +6,10 @@ export default function FormData(){
      const [form,setForm]=useState({name:"",email:"", age:""});
      const [error,setError]=useState("");
 
+     // console.log( navigator.userAgent );
+     // console.log( globalThis.screen );
+     
+
      function changeForm(e){
           setForm({
                ...form,
@@ -30,6 +34,9 @@ export default function FormData(){
      }
 
      return (
+          <>
+          <h3 className="text-3xl font-bold">Client Form</h3>
+          <p>API URL: { process.env.NEXT_PUBLIC_API_URL }</p>
           <form className="my-3" onSubmit={submitForm} noValidate>
 
                 <label className="me-3">Name: <input className="border p-2 rounded" value={form.name} name="name" type="text" onChange={changeForm} required /></label>
@@ -42,5 +49,6 @@ export default function FormData(){
                <p>Email: <output>{form.email}</output></p>
                <p>Age: <output>{form.age}</output></p>
           </form>
+          </>
      )
 }
